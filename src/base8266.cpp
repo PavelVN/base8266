@@ -18,7 +18,7 @@ Base8266::~Base8266()
 {
 }
 
-uint8_t topicAddress(const char *topic, uint8_t number = 255)
+uint8_t topicAddress(const char *topic, uint8_t number)
 {
   uint16_t size;
   uint16_t start = 0;
