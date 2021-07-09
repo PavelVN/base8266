@@ -10,11 +10,11 @@
 #define DEBUG_ENABLE
 
 #ifdef DEBUG_ENABLE
-#define DEBUG(...) Serial.print(##__VA_ARGS__)
+#define DEBUG(...) Serial.print(__VA_ARGS__)
 #define DEBUGln(...) Serial.println(__VA_ARGS__)
 #define DEBUGF(x) Serial.print(F(x))
 #define DEBUGFln(x) Serial.println(F(x))
-#define DEBUGf(M, ...) Serial.printf("[INFO] (%s:%d) " M "\n", __FILE__, __LINE__, ##__VA_ARGS__)
+#define DEBUGf(M, ...) Serial.printf("[INFO] (%s:%d) " M "\n", __FILE__, __LINE__, __VA_ARGS__)
 #define PRINT_ENV_VAR(x) (Serial.print(#x "="), Serial.println(x))
 #else
 #define DEBUG(...)
