@@ -77,8 +77,8 @@ public:
   WiFiClient wifiClient;
   PubSubClient mqttClient{wifiClient};
 
-  base8266(/* args */);
-  ~base8266();
+  Base8266(/* args */);
+  ~Base8266();
   void setup();
   void loop();
   void checkConnection();
